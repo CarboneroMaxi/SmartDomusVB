@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E60AFEC9-5305-49F3-A75A-DEE49D6CA1DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>My.MyApplication</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>SmartDomus</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SmartDomus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SmartDomus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarClientes.Designer.vb">
+      <DependentUpon>AgregarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarEmpleados.Designer.vb">
+      <DependentUpon>AgregarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarMaterial.Designer.vb">
+      <DependentUpon>AgregarMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarServicio.Designer.vb">
+      <DependentUpon>AgregarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarContrato.Designer.vb">
+      <DependentUpon>AgregarContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contratos.Designer.vb">
+      <DependentUpon>Contratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCliente.Designer.vb">
+      <DependentUpon>EliminarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarContrato.Designer.vb">
+      <DependentUpon>EliminarContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarEmpleado.Designer.vb">
+      <DependentUpon>EliminarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarMaterial.Designer.vb">
+      <DependentUpon>EliminarMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarServicio.Designer.vb">
+      <DependentUpon>EliminarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados.Designer.vb">
+      <DependentUpon>Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logsvb.Designer.vb">
+      <DependentUpon>Logsvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logsvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiales.Designer.vb">
+      <DependentUpon>Materiales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarClientes.Designer.vb">
+      <DependentUpon>ModificarClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarContrato.Designer.vb">
+      <DependentUpon>ModificarContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEmpleados.Designer.vb">
+      <DependentUpon>ModificarEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarMaterial.Designer.vb">
+      <DependentUpon>ModificarMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarServicio.Designer.vb">
+      <DependentUpon>ModificarServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PanelDeControl.Designer.vb">
+      <DependentUpon>PanelDeControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PanelDeControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilCliente.Designer.vb">
+      <DependentUpon>PerfilCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilEmpleado.Designer.vb">
+      <DependentUpon>PerfilEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios.Designer.vb">
+      <DependentUpon>Servicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AgregarClientes.resx">
+      <DependentUpon>AgregarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarEmpleados.resx">
+      <DependentUpon>AgregarEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarMaterial.resx">
+      <DependentUpon>AgregarMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarServicio.resx">
+      <DependentUpon>AgregarServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarContrato.resx">
+      <DependentUpon>AgregarContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contratos.resx">
+      <DependentUpon>Contratos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarContrato.resx">
+      <DependentUpon>EliminarContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarEmpleado.resx">
+      <DependentUpon>EliminarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarMaterial.resx">
+      <DependentUpon>EliminarMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarServicio.resx">
+      <DependentUpon>EliminarServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logsvb.resx">
+      <DependentUpon>Logsvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiales.resx">
+      <DependentUpon>Materiales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarClientes.resx">
+      <DependentUpon>ModificarClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarContrato.resx">
+      <DependentUpon>ModificarContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEmpleados.resx">
+      <DependentUpon>ModificarEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarMaterial.resx">
+      <DependentUpon>ModificarMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarServicio.resx">
+      <DependentUpon>ModificarServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelDeControl.resx">
+      <DependentUpon>PanelDeControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilCliente.resx">
+      <DependentUpon>PerfilCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilEmpleado.resx">
+      <DependentUpon>PerfilEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios.resx">
+      <DependentUpon>Servicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
