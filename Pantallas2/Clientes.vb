@@ -1,5 +1,10 @@
-﻿Public Class Clientes
+﻿Imports System.Data.SqlClient
+
+Public Class Clientes
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        Dim conn As DBConn = DBConn.Instance
+        Dim reader As SqlDataReader = conn.SelectStatement("SELECT * FROM ciclistas C JOIN participacion P ON C.ci=P.ci WHERE P.puesto=1")
 
     End Sub
 
@@ -18,17 +23,17 @@
         ModificarClientes.Visible = True
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) 
+    Private Sub Button9_Click(sender As Object, e As EventArgs)
         Me.Visible = False
         ModificarClientes.Visible = True
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) 
+    Private Sub Button8_Click(sender As Object, e As EventArgs)
         Me.Visible = False
         ModificarClientes.Visible = True
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) 
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
         Me.Visible = False
         ModificarClientes.Visible = True
     End Sub
@@ -38,17 +43,17 @@
         PerfilCliente.Visible = True
     End Sub
 
-    Private Sub Button13_Click(sender As Object, e As EventArgs) 
+    Private Sub Button13_Click(sender As Object, e As EventArgs)
         Me.Visible = False
         PerfilCliente.Visible = True
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) 
+    Private Sub Button12_Click(sender As Object, e As EventArgs)
         Me.Visible = False
         PerfilCliente.Visible = True
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) 
+    Private Sub Button11_Click(sender As Object, e As EventArgs)
         Me.Visible = False
         PerfilCliente.Visible = True
     End Sub
@@ -57,15 +62,15 @@
         EliminarCliente.Visible = True
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) 
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         EliminarCliente.Visible = True
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) 
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
         EliminarCliente.Visible = True
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) 
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         EliminarCliente.Visible = True
     End Sub
 End Class

@@ -181,6 +181,26 @@
     <Compile Include="Materiales.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="model\Administrador.vb" />
+    <Compile Include="model\Agua.vb" />
+    <Compile Include="model\Caudalimetro.vb" />
+    <Compile Include="model\Cliente.vb" />
+    <Compile Include="model\ClienteContrato.vb" />
+    <Compile Include="model\Consumo.vb" />
+    <Compile Include="model\Contrato.vb" />
+    <Compile Include="model\DBConn.vb" />
+    <Compile Include="model\Empleado.vb" />
+    <Compile Include="model\EmpleadoRol.vb" />
+    <Compile Include="model\Generica.vb" />
+    <Compile Include="model\Luz.vb" />
+    <Compile Include="model\Material.vb" />
+    <Compile Include="model\MedidorDeCorrienteAlterna.vb" />
+    <Compile Include="model\Persona.vb" />
+    <Compile Include="model\RaspberryPi.vb" />
+    <Compile Include="model\Rol.vb" />
+    <Compile Include="model\Servicio.vb" />
+    <Compile Include="model\ServicioContrato.vb" />
+    <Compile Include="model\Soporte.vb" />
     <Compile Include="ModificarClientes.Designer.vb">
       <DependentUpon>ModificarClientes.vb</DependentUpon>
     </Compile>
@@ -359,5 +379,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -32,15 +32,21 @@ Partial Class PanelDeControl
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Salir = New System.Windows.Forms.Button()
+        Me.cliente = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.servicio = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.consumoLuz = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.consumoAgua = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'ListView1
         '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.cliente, Me.servicio, Me.consumoLuz, Me.consumoAgua})
         Me.ListView1.Location = New System.Drawing.Point(70, 149)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(500, 252)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
         '
         'Label1
         '
@@ -120,6 +126,26 @@ Partial Class PanelDeControl
         Me.Salir.Text = "Salir"
         Me.Salir.UseVisualStyleBackColor = True
         '
+        'cliente
+        '
+        Me.cliente.Text = "Cliente"
+        Me.cliente.Width = 100
+        '
+        'servicio
+        '
+        Me.servicio.Text = "Servicio"
+        Me.servicio.Width = 100
+        '
+        'consumoLuz
+        '
+        Me.consumoLuz.Text = "Consumo de Luz"
+        Me.consumoLuz.Width = 150
+        '
+        'consumoAgua
+        '
+        Me.consumoAgua.Text = "Consumo de Agua"
+        Me.consumoAgua.Width = 150
+        '
         'PanelDeControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -152,4 +178,8 @@ Partial Class PanelDeControl
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Salir As Button
+    Friend WithEvents cliente As ColumnHeader
+    Friend WithEvents servicio As ColumnHeader
+    Friend WithEvents consumoLuz As ColumnHeader
+    Friend WithEvents consumoAgua As ColumnHeader
 End Class

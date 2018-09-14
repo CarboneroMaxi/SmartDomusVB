@@ -68,3 +68,9 @@ C:\Users\Alumno\Downloads\SmartDomusAppVB\Pantallas2\bin\Debug\SmartDomus.exe.co
 C:\Users\Alumno\Downloads\SmartDomusAppVB\Pantallas2\bin\Debug\SmartDomus.exe
 C:\Users\Alumno\Downloads\SmartDomusAppVB\Pantallas2\bin\Debug\SmartDomus.pdb
 C:\Users\Alumno\Downloads\SmartDomusAppVB\Pantallas2\bin\Debug\SmartDomus.xml
+C:\Users\Alumno\source\repos\SmartDomusAppVB\Pantallas2\obj\Debug\AgregarContrato.resources
+C:\Users\Alumno\source\repos\SmartDomusAppVB\Pantallas2\obj\Debug\Contratos.resources
+C:\Users\Alumno\source\repos\SmartDomusAppVB\Pantallas2\obj\Debug\EliminarContrato.resources
+C:\Users\Alumno\source\repos\SmartDomusAppVB\Pantallas2\obj\Debug\Logsvb.resources
+C:\Users\Alumno\source\repos\SmartDomusAppVB\Pantallas2\obj\Debug\ModificarContrato.resources
+C:\Users\Alumno\source\repos\SmartDomusAppVB\Pantallas2\obj\Debug\PanelDeControl.resources

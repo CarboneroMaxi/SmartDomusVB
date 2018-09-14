@@ -36,6 +36,10 @@ Partial Class Materiales
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.id = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.nombre = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.serie = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.estado = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'Label1
@@ -148,11 +152,29 @@ Partial Class Materiales
         '
         'ListView1
         '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.id, Me.nombre, Me.serie, Me.estado})
         Me.ListView1.Location = New System.Drawing.Point(54, 176)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(604, 235)
         Me.ListView1.TabIndex = 54
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'id
+        '
+        Me.id.Text = "Id"
+        '
+        'nombre
+        '
+        Me.nombre.Text = "Nombre"
+        '
+        'serie
+        '
+        Me.serie.Text = "Serie"
+        '
+        'estado
+        '
+        Me.estado.Text = "Estado"
         '
         'Materiales
         '
@@ -191,4 +213,8 @@ Partial Class Materiales
     Friend WithEvents Button10 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents ListView1 As ListView
+    Friend WithEvents id As ColumnHeader
+    Friend WithEvents nombre As ColumnHeader
+    Friend WithEvents serie As ColumnHeader
+    Friend WithEvents estado As ColumnHeader
 End Class
